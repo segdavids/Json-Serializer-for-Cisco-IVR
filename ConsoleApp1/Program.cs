@@ -50,8 +50,9 @@ namespace ConsoleProgram
 
 
                 var acctdet = response.Content.ReadAsStringAsync().Result;
-               // var newer = acctdet.TrimEnd(']', '!', '<');
-               // var newer1 = newer.TrimStart('[', '!', '<');
+                Console.WriteLine(acctdet[0].Phone);
+                // var newer = acctdet.TrimEnd(']', '!', '<');
+                // var newer1 = newer.TrimStart('[', '!', '<');
 
                 // Console.WriteLine(acctdet);
                 dynamic jsonRes = JsonConvert.SerializeObject(acctdet);
